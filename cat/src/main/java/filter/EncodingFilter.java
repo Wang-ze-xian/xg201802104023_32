@@ -27,14 +27,15 @@ public class EncodingFilter implements Filter {
         System.out.println("EncodingFilter -encoding begins");
         HttpServletRequest request = (HttpServletRequest)servletRequest;
         HttpServletResponse response = (HttpServletResponse)servletResponse;
-        HttpSession session = request.getSession(false);
-        JSONObject message = new JSONObject();
+        //HttpSession session = request.getSession(false);
+        //JSONObject message = new JSONObject();
 
-        if(session == null || session.getAttribute("currentUser") == null){
-            message.put("message","请登录或重新登录");
-            response.getWriter().println(message);
-            return;
-        }
+
+        /**if(session == null || session.getAttribute("currentUser") == null){
+         message.put("message","请登录或重新登录");
+         response.getWriter().println(message);
+         return;
+         }**/
 
         String path = request.getRequestURI();
         System.out.println("set response");

@@ -41,8 +41,8 @@ public final class UserService {
         return userDao.userToAdd(user);
     }
 
-    public User findByPasswordAndUsername(String password, String username) throws SQLException {
-        return userDao.findByUsernameAndPassword(password,username);
+    public User findByPasswordAndUsername(String username,String password) throws SQLException {
+        return userDao.findByUsernameAndPassword(username,password);
     }
 
     public boolean update(User user) throws SQLException {

@@ -85,7 +85,7 @@ public final class UserDao {
         return delete1>0;
     }
 
-    public User findByUsernameAndPassword(String password,String username) throws SQLException {
+    public User findByUsernameAndPassword(String username,String password) throws SQLException {
         Set<User> users = new HashSet<User>();
         //获得连接对象
         Connection connection = JdbcHelper.getConn();
