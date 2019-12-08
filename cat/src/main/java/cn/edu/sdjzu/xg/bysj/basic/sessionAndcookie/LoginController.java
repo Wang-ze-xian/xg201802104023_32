@@ -1,4 +1,4 @@
-package session;
+package cn.edu.sdjzu.xg.bysj.basic.sessionAndcookie;
 
 import cn.edu.sdjzu.xg.bysj.domain.User;
 import com.alibaba.fastjson.JSON;

@@ -1,4 +1,4 @@
-package session;
+package cn.edu.sdjzu.xg.bysj.basic.sessionAndcookie;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
